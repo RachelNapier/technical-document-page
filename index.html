@@ -13,10 +13,75 @@
       </nav>
       <section id="Introduction" class="main-section">
         <header>Introduction</header>
+        <p>
+          The Flexible Box Module, usually referred to as flexbox, was designed
+          as a one-dimensional layout model, and as a method that could offer
+          space distribution between items in an interface and powerful
+          alignment capabilities. This article gives an outline of the main
+          features of flexbox, which we will be exploring in more detail in the
+          rest of these guides.
+        </p>
+        <p>
+          When we describe flexbox as being one dimensional we are describing
+          the fact that flexbox deals with layout in one dimension at a time —
+          either as a row or as a column. This can be contrasted with the
+          two-dimensional model of CSS Grid Layout, which controls columns and
+          rows together.
+        </p>
       </section>
 
       <section id="The_two_axes_of_flexbox" class="main-section">
         <header>The two axes of flexbox</header>
+        <p>
+          When working with flexbox you need to think in terms of two axes — the
+          main axis and the cross axis. The main axis is defined by the
+          flex-direction property, and the cross axis runs perpendicular to it.
+          Everything we do with flexbox refers back to these axes, so it is
+          worth understanding how they work from the outset.
+        </p>
+        <h1>The main axis</h1>
+        <p>
+          The main axis is defined by flex-direction, which has four possible
+          values:
+        </p>
+        <ul>
+          <li>Row</li>
+          <li>Row-reverse</li>
+          <li>Column</li>
+          <li>Column-reverse</li>
+        </ul>
+        <p>
+          Should you choose row or row-reverse, your main axis will run along
+          the row in the inline direction.
+        </p>
+        <img
+          src="images/flex-direction-row.png"
+          alt="Main axis: flex row example"
+        />
+        <p>
+          Choose column or column-reverse and your main axis will run from the
+          top of the page to the bottom — in the block direction.
+        </p>
+        <img src="images/column.png" alt="Main axis: flex-column example" />
+        <h2>The cross axis</h2>
+        <p>
+          The cross axis runs perpendicular to the main axis, therefore if your
+          flex-direction (main axis) is set to row or row-reverse the cross axis
+          runs down the columns.
+        </p>
+        <img
+          src="images/cross-axis-row.png"
+          alt="Cross axis: flex-row example"
+        />
+        <p>
+          If your main axis is column or column-reverse then the cross axis runs
+          along the rows.
+        </p>
+        <img
+          src="images/cross-axis-column.png"
+          alt="Cross axis: flex-column
+        example "
+        />
       </section>
 
       <section id="Start_and_end_lines" class="main-section">
