@@ -9,7 +9,23 @@
   <body>
     <main id="main-doc">
       <nav id="navbar">
-        <header></header>
+        <header>CSS Flexbox</header>
+        <a href="#Introduction" class="nav-link">Introduction</a>
+        <a href="#The_two_axes_of_flexbox" class="nav-link"
+          >The two axes of flexbox</a
+        >
+        <a href="#Start_and_end_lines" class="nav-link">Start and end lines</a>
+        <a href="#The_flex_container" class="nav-link">The flex container</a>
+        <a href="#Flex-wrap" class="nav-link">Flex-wrap</a>
+        <a href="#The_flex-flow_shorthand" class="nav-link"
+          >The flex-flow shorthand</a
+        >
+        <a href="#Properties_applied_to_flex_Items" class="nav-link"
+          >Properties applied to flex items</a
+        >
+        <a href="#Alignment_&_justifcation" class="nav-link"
+          >Alignment & justifcation</a
+        >
       </nav>
       <section id="Introduction" class="main-section">
         <header>Introduction</header>
@@ -86,10 +102,78 @@
 
       <section id="Start_and_end_lines" class="main-section">
         <header>Start and end lines</header>
+        <p>
+          Another vital area of understanding is how flexbox makes no assumption
+          about the writing mode of the document. In the past, CSS was heavily
+          weighted towards horizontal and left-to-right writing modes. Modern
+          layout methods encompass the range of writing modes and so we no
+          longer assume that a line of text will start at the top left of a
+          document and run towards the right hand side, with new lines appearing
+          one under the other.
+        </p>
+        <p>
+          If the flex-direction is row and I am working in English, then the
+          start edge of the main axis will be on the left, the end edge on the
+          right.
+        </p>
+        <img
+          src="images/flex-direction-row.png"
+          alt="Main axis: flex row example"
+        />
+        <p>
+          If I were to work in Arabic, then the start edge of my main axis would
+          be on the right and the end edge on the left.
+        </p>
+        <img
+          src="images/arabic-flex-direction.png"
+          alt="Main axis: flex row example in arabic"
+        />
       </section>
 
       <section id="The_flex_container" class="main-section">
         <header>The flex container</header>
+        <p>
+          An area of a document laid out using flexbox is called a flex
+          container. To create a flex container, we set the value of the area's
+          container's display property to flex or inline-flex. As soon as we do
+          this the direct children of that container become flex items. As with
+          all properties in CSS, some initial values are defined, so when
+          creating a flex container all of the contained flex items will behave
+          in the following way.
+        </p>
+        <ul>
+          <li>
+            Items display in a row (the flex-direction property's default is
+            row).
+          </li>
+          <li>The items start from the start edge of the main axis.</li>
+          <li>
+            The items do not stretch on the main dimension, but can shrink.
+          </li>
+          <li>The items will stretch to fill the size of the cross axis.</li>
+          <li>The flex-basis property is set to auto.</li>
+          <li>The flex-wrap property is set to nowrap.</li>
+        </ul>
+        <div class="example-flex-container">
+          <div>1</div>
+          <div>2</div>
+          <div>3</div>
+          <code>
+            <pre>
+            .flex-container {
+            display: flex;
+            background-color: DodgerBlue;
+            }
+
+            .flex-container > div {
+            background-color: #f1f1f1;
+            margin: 10px;
+            padding: 20px;
+            font-size: 30px;
+            }
+            </pre>
+          </code>
+        </div>
       </section>
 
       <section id="Flex-wrap" class="main-section">
