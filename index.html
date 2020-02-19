@@ -42,7 +42,94 @@
       </section>
       <section id="#CSS_ruleset" class="main-section">
         <header>CSS ruleset</header>
+        <p>
+          This whole structure is called a <strong>rule set</strong>(but often
+          "rule" for short). Note the names of the individual parts:
+        </p>
         <img src="images/css-example.png" alt="Example of Css code." />
+        <ul>
+          <li>
+            <p>Selector</p>
+            <ul>
+              <li>
+                <p>
+                  The HTML element name at the start of the rule set. It selects
+                  the element(s) to be styled. To style a different element,
+                  just change the selector.
+                </p>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <p>
+              Declaration
+            </p>
+            <ul>
+              <li>
+                <p>
+                  A single rule like color: red; specifying which of the
+                  element's properties you want to style.
+                </p>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <p>
+              Properties
+            </p>
+            <ul>
+              <li>
+                <p>
+                  Ways in which you can style a given HTML element.
+                </p>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <p>
+              Property value
+            </p>
+            <ul>
+              <li>
+                <p>
+                  To the right of the property, after the colon, we have the
+                  property value, which chooses one out of many possible
+                  appearances for a given property
+                </p>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <p>Other important parts of the syntax:</p>
+        <ul>
+          <li>
+            <p>
+              Each rule set (apart from the selector) must be wrapped in curly
+              braces ({}).
+            </p>
+          </li>
+          <li>
+            <p>
+              Within each declaration, you must use a colon (:) to separate the
+              property from its values.
+            </p>
+          </li>
+          <li>
+            <p>
+              Within each rule set, you must use a semicolon (;) to separate
+              each declaration from the next one.
+            </p>
+          </li>
+        </ul>
+        <code>
+          <pre>
+            p {
+              color: red;
+              width: 500px;
+              border: 1px solid black;
+            }
+          </pre>
+        </code>
       </section>
 
       <section id="Fonts_and_text" class="main-section">
