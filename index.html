@@ -7,163 +7,169 @@
     <link rel="stylesheet" type="text/css" href="style.css" />
   </head>
   <body>
-    <nav id="navbar">
-      <header>CSS Basics Documentation</header>
-      <ul id="menu">
-        <li><a href="#What_is_CSS?" class="nav-link">What is CSS?</a></li>
-        <li<a href="#CSS_ruleset" class="nav-link">CSS ruleset</a></li>
-        <li<a href="#Fonts_and_text" class="nav-link">Fonts and text</a></li>
-        <li<a href="#Boxes" class="nav-link">Boxes</a></li>
-        <li<a href="#Reference" class="nav-link">Reference</a></li>
-      </ul>
-    </nav>
-    <main id="main-doc">
-      <section id="What_is_CSS?" class="main-section">
-        <header>What is CSS?</header>
-        <article>
-          <p>
-            CSS (Cascading Style Sheets) is the code you use to style your
-            webpage. CSS basics takes you through what you need to get started.
-            We'll answer questions like: How do I make my text black or red? How
-            do I make my content show up in such-and-such a place on the screen?
-            How do I decorate my webpage with background images and colors?
-          </p>
-          <p>
-            Like HTML, CSS is not really a programming language. It is not a
-            markup language either — it is a style sheet language. This means
-            that it lets you apply styles selectively to elements in HTML
-            documents. For example, to select all the paragraph elements on an
-            HTML page and turn the text within them red, you'd write this CSS:
-          </p>
-          <code>
-            <pre>
+    <div id="grid-container">
+        <nav id="navbar">
+          <header><h1>CSS Basics Documentation</h1></header>
+          <ul id="menu">
+            <li><a href="#What_is_CSS?" class="nav-link">What is CSS?</a></li>
+            <li><a href="#CSS_ruleset" class="nav-link">CSS ruleset</a></li>
+            <li>
+              <a href="#Fonts_and_text" class="nav-link">Fonts and text</a>
+            </li>
+            <li><a href="#Boxes" class="nav-link">Boxes</a></li>
+            <li><a href="#Reference" class="nav-link">Reference</a></li>
+          </ul>
+        </nav>
+        <main id="main-doc">
+        <section id="What_is_CSS?" class="main-section">
+          <header><h2>What is CSS?</h2></header>
+          <article>
+            <p>
+              CSS (Cascading Style Sheets) is the code you use to style your
+              webpage. CSS basics takes you through what you need to get
+              started. We'll answer questions like: How do I make my text black
+              or red? How do I make my content show up in such-and-such a place
+              on the screen? How do I decorate my webpage with background images
+              and colors?
+            </p>
+            <p>
+              Like HTML, CSS is not really a programming language. It is not a
+              markup language either — it is a style sheet language. This means
+              that it lets you apply styles selectively to elements in HTML
+              documents. For example, to select all the paragraph elements on an
+              HTML page and turn the text within them red, you'd write this CSS:
+            </p>
+            <code>
+              <pre>
           p {
             color: red;
           }
           </pre
-            >
-          </code>
-        </article>
-      </section>
-      <section id="CSS_ruleset" class="main-section">
-        <header>CSS ruleset</header>
-        <article>
-          <p>
-            This whole structure is called a <strong>rule set</strong>(but often
-            "rule" for short). Note the names of the individual parts:
-          </p>
-          <img src="images/css-example.png" alt="Example of Css code." />
-          <ul>
-            <li>
-              <p>Selector</p>
-              <ul>
-                <li>
-                  <p>
-                    The HTML element name at the start of the rule set. It
-                    selects the element(s) to be styled. To style a different
-                    element, just change the selector.
-                  </p>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <p>
-                Declaration
-              </p>
-              <ul>
-                <li>
-                  <p>
-                    A single rule like color: red; specifying which of the
-                    element's properties you want to style.
-                  </p>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <p>
-                Properties
-              </p>
-              <ul>
-                <li>
-                  <p>
-                    Ways in which you can style a given HTML element.
-                  </p>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <p>
-                Property value
-              </p>
-              <ul>
-                <li>
-                  <p>
-                    To the right of the property, after the colon, we have the
-                    property value, which chooses one out of many possible
-                    appearances for a given property
-                  </p>
-                </li>
-              </ul>
-            </li>
-          </ul>
-          <p>Other important parts of the syntax:</p>
-          <ul>
-            <li>
-              <p>
-                Each rule set (apart from the selector) must be wrapped in curly
-                braces ({}).
-              </p>
-            </li>
-            <li>
-              <p>
-                Within each declaration, you must use a colon (:) to separate
-                the property from its values.
-              </p>
-            </li>
-            <li>
-              <p>
-                Within each rule set, you must use a semicolon (;) to separate
-                each declaration from the next one.
-              </p>
-            </li>
-          </ul>
-          <code>
-            <pre>
+              >
+            </code>
+          </article>
+        </section>
+        <section id="CSS_ruleset" class="main-section">
+          <header><h3>CSS ruleset</h3></header>
+          <article>
+            <p>
+              This whole structure is called a <strong>rule set</strong> (but
+              often "rule" for short). Note the names of the individual parts:
+            </p>
+            <img src="images/css-example.png" alt="Example of Css code." />
+            <ul>
+              <li>
+                <p>Selector</p>
+                <ul>
+                  <li>
+                    <p>
+                      The HTML element name at the start of the rule set. It
+                      selects the element(s) to be styled. To style a different
+                      element, just change the selector.
+                    </p>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <p>
+                  Declaration
+                </p>
+                <ul>
+                  <li>
+                    <p>
+                      A single rule like color: red; specifying which of the
+                      element's properties you want to style.
+                    </p>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <p>
+                  Properties
+                </p>
+                <ul>
+                  <li>
+                    <p>
+                      Ways in which you can style a given HTML element.
+                    </p>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <p>
+                  Property value
+                </p>
+                <ul>
+                  <li>
+                    <p>
+                      To the right of the property, after the colon, we have the
+                      property value, which chooses one out of many possible
+                      appearances for a given property
+                    </p>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <p>Other important parts of the syntax:</p>
+            <ul>
+              <li>
+                <p>
+                  Each rule set (apart from the selector) must be wrapped in
+                  curly braces ({}).
+                </p>
+              </li>
+              <li>
+                <p>
+                  Within each declaration, you must use a colon (:) to separate
+                  the property from its values.
+                </p>
+              </li>
+              <li>
+                <p>
+                  Within each rule set, you must use a semicolon (;) to separate
+                  each declaration from the next one.
+                </p>
+              </li>
+            </ul>
+            <code>
+              <pre>
             p {
               color: red;
               width: 500px;
               border: 1px solid black;
             }
           </pre
-            >
-          </code>
-        </article>
-      </section>
+              >
+            </code>
+          </article>
+        </section>
 
-      <section id="Fonts_and_text" class="main-section">
-        <header>Fonts and text</header>
-        <article>
-          <p>
-            The font CSS property is a shorthand for font-style, font-variant,
-            font-weight, font-stretch, font-size, line-height, and font-family.
-            Alternatively, it sets an element's font to a system font.
-          </p>
-          <code>
-            <pre>
+        <section id="Fonts_and_text" class="main-section">
+          <header><h4>Fonts and text</h4></header>
+          <article>
+            <p>
+              The font CSS property is a shorthand for font-style, font-variant,
+              font-weight, font-stretch, font-size, line-height, and
+              font-family. Alternatively, it sets an element's font to a system
+              font.
+            </p>
+            <code>
+              <pre>
             html {
               font-size: 10px; /* px means "pixels": the base font size is now 10 pixels high  */
               font-family: "Open Sans", sans-serif; /* this should be the rest of the output you got from Google fonts */
             }
           </pre
-            >
-          </code>
-          <p>
-            This rule first sets a global base font and font size for the whole
-            page (since html is the parent element of the whole page, and all
-            elements inside it inherit the same font-size and font-family)
-          </p>
-          <code>
-            <pre>
+              >
+            </code>
+            <p>
+              This rule first sets a global base font and font size for the
+              whole page (since html is the parent element of the whole page,
+              and all elements inside it inherit the same font-size and
+              font-family)
+            </p>
+            <code>
+              <pre>
             h1 {
               font-size: 60px;
               text-align: center;
@@ -175,104 +181,104 @@
               letter-spacing: 1px;
             }
           </pre
-            >
-          </code>
-          <p>
-            Centering the text, setting a line height and letter spacing will
-            make the body content much more readable. Adjusting the px value can
-            increase or decrease your text to any desire you wish it to be.
-          </p>
-          <code>
-            <pre>
+              >
+            </code>
+            <p>
+              Centering the text, setting a line height and letter spacing will
+              make the body content much more readable. Adjusting the px value
+              can increase or decrease your text to any desire you wish it to
+              be.
+            </p>
+            <code>
+              <pre>
             html {
               color: blue;
             }
           </pre
-            >
-          </code>
-          <p>
-            Along with changing the font and size, you can also apply a
-            different color to all your text. The example above, shows that the
-            color of all text, in the html, will be blue.
-          </p>
-        </article>
-      </section>
+              >
+            </code>
+            <p>
+              Along with changing the font and size, you can also apply a
+              different color to all your text. The example above, shows that
+              the color of all text, in the html, will be blue.
+            </p>
+          </article>
+        </section>
 
-      <section id="Boxes" class="main-section">
-        <header>Boxes</header>
-        <article>
-          <p>
-            One thing you'll notice about writing CSS is that a lot of it is
-            about boxes — setting their size, color, position, etc. Most of the
-            HTML elements on your page can be thought of as boxes sitting on top
-            of each other.
-          </p>
-          <p>
-            CSS layout is based principally on the box model. Each of the blocks
-            taking up space on your page has properties like this:
-          </p>
-          <img src="images/box-model.png" alt="Box model example" />
-          <ul>
-            <li>
-              <p>
-                <strong>Padding</strong>
-              </p>
-              <ul>
-                <li>
-                  <p>
-                    The space just around the content (e.g., around paragraph
-                    text).
-                  </p>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <p>
-                <strong>Border</strong>
-              </p>
-              <ul>
-                <li>
-                  <p>
-                    The solid line that sits just outside the padding.
-                  </p>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <p>
-                <strong>Margin</strong>
-              </p>
-              <ul>
-                <li>
-                  <p>
-                    The space around the outside of the element.
-                  </p>
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </article>
-      </section>
+        <section id="Boxes" class="main-section">
+          <header><h5>Boxes</h5></header>
+          <article>
+            <p>
+              One thing you'll notice about writing CSS is that a lot of it is
+              about boxes — setting their size, color, position, etc. Most of
+              the HTML elements on your page can be thought of as boxes sitting
+              on top of each other.
+            </p>
+            <p>
+              CSS layout is based principally on the box model. Each of the
+              blocks taking up space on your page has properties like this:
+            </p>
+            <img src="images/box-model.png" alt="Box model example" />
+            <ul>
+              <li>
+                <p>
+                  <strong>Padding</strong>
+                </p>
+                <ul>
+                  <li>
+                    <p>
+                      The space just around the content (e.g., around paragraph
+                      text).
+                    </p>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <p>
+                  <strong>Border</strong>
+                </p>
+                <ul>
+                  <li>
+                    <p>
+                      The solid line that sits just outside the padding.
+                    </p>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <p>
+                  <strong>Margin</strong>
+                </p>
+                <ul>
+                  <li>
+                    <p>
+                      The space around the outside of the element.
+                    </p>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </article>
+        </section>
 
-      <section id="Reference" class="main-section">
-        <header>Reference</header>
-        <article>
-          <p>
-            All the content in this documentation can be found from the
-            <a
-              href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics"
-              >CSS Basics Documentation Page</a
-            >
-          </p>
-        </article>
-      </section>
-      <footer>
-        <p>
-          A project for <a href="wwww.freecodecamp.org">FreeCodeCamp</a> by:
-        </p>
-        <p>Rachel Napier</p>
-      </footer>
-    </main>
+        <section id="Reference" class="main-section">
+          <header><h6>Reference</h6></header>
+          <article>
+            <p>
+              All the content in this documentation can be found from the
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics"
+                >CSS Basics Documentation Page</a
+              >
+            </p>
+          </article>
+        </section>
+      </main>
+    <footer>
+      <p>A project for <a href="wwww.freecodecamp.org" target="_blank">FreeCodeCamp</a> by:</p>
+      <p>Rachel Napier</p>
+    </footer>
+    </div>
   </body>
   <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </html>
