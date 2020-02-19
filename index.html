@@ -3,193 +3,58 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-main, initial-scale=1.0" />
-    <title>Technical Document Page</title>
+    <title>CSS Technical Document Page</title>
     <link rel="stylesheet" type="text/css" href="style.css" />
   </head>
   <body>
+    <nav id="navbar">
+      <header>CSS Basics Documentation</header>
+      <a href="#What_is_CSS?" class="nav-link">What is CSS?</a>
+      <a href="#CSS_ruleset" class="nav-link">#CSS ruleset</a>
+      <a href="#Fonts_and_text" class="nav-link">Fonts and text</a>
+      <a href="#Boxes" class="nav-link">Boxes</a>
+      <a href="#Reference" class="nav-link">Reference</a>
+    </nav>
     <main id="main-doc">
-      <nav id="navbar">
-        <header>CSS Flexbox</header>
-        <a href="#Introduction" class="nav-link">Introduction</a>
-        <a href="#The_two_axes_of_flexbox" class="nav-link"
-          >The two axes of flexbox</a
-        >
-        <a href="#Start_and_end_lines" class="nav-link">Start and end lines</a>
-        <a href="#The_flex_container" class="nav-link">The flex container</a>
-        <a href="#Flex-wrap" class="nav-link">Flex-wrap</a>
-        <a href="#The_flex-flow_shorthand" class="nav-link"
-          >The flex-flow shorthand</a
-        >
-        <a href="#Properties_applied_to_flex_Items" class="nav-link"
-          >Properties applied to flex items</a
-        >
-        <a href="#Alignment_&_justifcation" class="nav-link"
-          >Alignment & justifcation</a
-        >
-      </nav>
-      <section id="Introduction" class="main-section">
-        <header>Introduction</header>
+      <section id="What_is_CSS?" class="main-section">
+        <header>What is CSS?</header>
         <p>
-          The Flexible Box Module, usually referred to as flexbox, was designed
-          as a one-dimensional layout model, and as a method that could offer
-          space distribution between items in an interface and powerful
-          alignment capabilities. This article gives an outline of the main
-          features of flexbox, which we will be exploring in more detail in the
-          rest of these guides.
+          CSS (Cascading Style Sheets) is the code you use to style your
+          webpage. CSS basics takes you through what you need to get started.
+          We'll answer questions like: How do I make my text black or red? How
+          do I make my content show up in such-and-such a place on the screen?
+          How do I decorate my webpage with background images and colors?
         </p>
         <p>
-          When we describe flexbox as being one dimensional we are describing
-          the fact that flexbox deals with layout in one dimension at a time —
-          either as a row or as a column. This can be contrasted with the
-          two-dimensional model of CSS Grid Layout, which controls columns and
-          rows together.
+          Like HTML, CSS is not really a programming language. It is not a
+          markup language either — it is a style sheet language. This means that
+          it lets you apply styles selectively to elements in HTML documents.
+          For example, to select all the paragraph elements on an HTML page and
+          turn the text within them red, you'd write this CSS:
         </p>
+        <code>
+          <pre>
+          p {
+            color: red;
+          }
+          </pre>
+        </code>
+      </section>
+      <section id="#CSS_ruleset" class="main-section">
+        <header>CSS ruleset</header>
+        <img src="images/css-example.png" alt="Example of Css code." />
       </section>
 
-      <section id="The_two_axes_of_flexbox" class="main-section">
-        <header>The two axes of flexbox</header>
-        <p>
-          When working with flexbox you need to think in terms of two axes — the
-          main axis and the cross axis. The main axis is defined by the
-          flex-direction property, and the cross axis runs perpendicular to it.
-          Everything we do with flexbox refers back to these axes, so it is
-          worth understanding how they work from the outset.
-        </p>
-        <h1>The main axis</h1>
-        <p>
-          The main axis is defined by flex-direction, which has four possible
-          values:
-        </p>
-        <ul>
-          <li>Row</li>
-          <li>Row-reverse</li>
-          <li>Column</li>
-          <li>Column-reverse</li>
-        </ul>
-        <p>
-          Should you choose row or row-reverse, your main axis will run along
-          the row in the inline direction.
-        </p>
-        <img
-          src="images/flex-direction-row.png"
-          alt="Main axis: flex row example"
-        />
-        <p>
-          Choose column or column-reverse and your main axis will run from the
-          top of the page to the bottom — in the block direction.
-        </p>
-        <img src="images/column.png" alt="Main axis: flex-column example" />
-        <h2>The cross axis</h2>
-        <p>
-          The cross axis runs perpendicular to the main axis, therefore if your
-          flex-direction (main axis) is set to row or row-reverse the cross axis
-          runs down the columns.
-        </p>
-        <img
-          src="images/cross-axis-row.png"
-          alt="Cross axis: flex-row example"
-        />
-        <p>
-          If your main axis is column or column-reverse then the cross axis runs
-          along the rows.
-        </p>
-        <img
-          src="images/cross-axis-column.png"
-          alt="Cross axis: flex-column
-        example "
-        />
+      <section id="Fonts_and_text" class="main-section">
+        <header>Fonts and text</header>
       </section>
 
-      <section id="Start_and_end_lines" class="main-section">
-        <header>Start and end lines</header>
-        <p>
-          Another vital area of understanding is how flexbox makes no assumption
-          about the writing mode of the document. In the past, CSS was heavily
-          weighted towards horizontal and left-to-right writing modes. Modern
-          layout methods encompass the range of writing modes and so we no
-          longer assume that a line of text will start at the top left of a
-          document and run towards the right hand side, with new lines appearing
-          one under the other.
-        </p>
-        <p>
-          If the flex-direction is row and I am working in English, then the
-          start edge of the main axis will be on the left, the end edge on the
-          right.
-        </p>
-        <img
-          src="images/flex-direction-row.png"
-          alt="Main axis: flex row example"
-        />
-        <p>
-          If I were to work in Arabic, then the start edge of my main axis would
-          be on the right and the end edge on the left.
-        </p>
-        <img
-          src="images/arabic-flex-direction.png"
-          alt="Main axis: flex row example in arabic"
-        />
+      <section id="Boxes" class="main-section">
+        <header>Boxes</header>
       </section>
 
-      <section id="The_flex_container" class="main-section">
-        <header>The flex container</header>
-        <p>
-          An area of a document laid out using flexbox is called a flex
-          container. To create a flex container, we set the value of the area's
-          container's display property to flex or inline-flex. As soon as we do
-          this the direct children of that container become flex items. As with
-          all properties in CSS, some initial values are defined, so when
-          creating a flex container all of the contained flex items will behave
-          in the following way.
-        </p>
-        <ul>
-          <li>
-            Items display in a row (the flex-direction property's default is
-            row).
-          </li>
-          <li>The items start from the start edge of the main axis.</li>
-          <li>
-            The items do not stretch on the main dimension, but can shrink.
-          </li>
-          <li>The items will stretch to fill the size of the cross axis.</li>
-          <li>The flex-basis property is set to auto.</li>
-          <li>The flex-wrap property is set to nowrap.</li>
-        </ul>
-        <div class="example-flex-container">
-          <div>1</div>
-          <div>2</div>
-          <div>3</div>
-          <code>
-            <pre>
-            .flex-container {
-            display: flex;
-            background-color: DodgerBlue;
-            }
-
-            .flex-container > div {
-            background-color: #f1f1f1;
-            margin: 10px;
-            padding: 20px;
-            font-size: 30px;
-            }
-            </pre>
-          </code>
-        </div>
-      </section>
-
-      <section id="Flex-wrap" class="main-section">
-        <header>Flex-wrap</header>
-      </section>
-
-      <section id="The_flex-flow_shorthand" class="main-section">
-        <header>The flex-flow shorthand</header>
-      </section>
-
-      <section id="Properties_applied_to_flex_Items" class="main-section">
-        <header>Properties applied to flex items</header>
-      </section>
-
-      <section id="Alignment_&_justifcation" class="main-section">
-        <header>Alignment & justifcation</header>
+      <section id="Reference" class="main-section">
+        <header>Reference</header>
       </section>
     </main>
   </body>
