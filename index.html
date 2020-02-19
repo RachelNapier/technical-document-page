@@ -10,7 +10,7 @@
     <nav id="navbar">
       <header>CSS Basics Documentation</header>
       <a href="#What_is_CSS?" class="nav-link">What is CSS?</a>
-      <a href="#CSS_ruleset" class="nav-link">#CSS ruleset</a>
+      <a href="#CSS_ruleset" class="nav-link">CSS ruleset</a>
       <a href="#Fonts_and_text" class="nav-link">Fonts and text</a>
       <a href="#Boxes" class="nav-link">Boxes</a>
       <a href="#Reference" class="nav-link">Reference</a>
@@ -40,7 +40,7 @@
           </pre>
         </code>
       </section>
-      <section id="#CSS_ruleset" class="main-section">
+      <section id="CSS_ruleset" class="main-section">
         <header>CSS ruleset</header>
         <p>
           This whole structure is called a <strong>rule set</strong>(but often
@@ -134,10 +134,109 @@
 
       <section id="Fonts_and_text" class="main-section">
         <header>Fonts and text</header>
+        <p>
+          The font CSS property is a shorthand for font-style, font-variant,
+          font-weight, font-stretch, font-size, line-height, and font-family.
+          Alternatively, it sets an element's font to a system font.
+        </p>
+        <code>
+          <pre>
+            html {
+              font-size: 10px; /* px means "pixels": the base font size is now 10 pixels high  */
+              font-family: "Open Sans", sans-serif; /* this should be the rest of the output you got from Google fonts */
+            }
+          </pre>
+        </code>
+        <p>
+          This rule first sets a global base font and font size for the whole
+          page (since html is the parent element of the whole page, and all
+          elements inside it inherit the same font-size and font-family)
+        </p>
+        <code>
+          <pre>
+            h1 {
+              font-size: 60px;
+              text-align: center;
+            }
+            
+            p, li {
+              font-size: 16px;
+              line-height: 2;
+              letter-spacing: 1px;
+            }
+          </pre>
+        </code>
+        <p>
+          Centering the text, setting a line height and letter spacing will make
+          the body content much more readable. Adjusting the px value can
+          increase or decrease your text to any desire you wish it to be.
+        </p>
+        <code>
+          <pre>
+            html {
+              color: blue;
+            }
+          </pre>
+        </code>
+        <p>
+          Along with changing the font and size, you can also apply a different
+          color to all your text. The example above, shows that the color of all
+          text, in the html, will be blue.
+        </p>
       </section>
 
       <section id="Boxes" class="main-section">
         <header>Boxes</header>
+        <p>
+          One thing you'll notice about writing CSS is that a lot of it is about
+          boxes — setting their size, color, position, etc. Most of the HTML
+          elements on your page can be thought of as boxes sitting on top of
+          each other.
+        </p>
+        <p>
+          CSS layout is based principally on the box model. Each of the blocks
+          taking up space on your page has properties like this:
+        </p>
+        <img src="images/box-model.png" alt="Box model example" />
+        <ul>
+          <li>
+            <p>
+              <strong>Padding</strong>
+            </p>
+            <ul>
+              <li>
+                <p>
+                  The space just around the content (e.g., around paragraph
+                  text).
+                </p>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <p>
+              <strong>Border</strong>
+            </p>
+            <ul>
+              <li>
+                <p>
+                  The solid line that sits just outside the padding.
+                </p>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <p>
+              <strong>Margin</strong>
+            </p>
+            <ul>
+              <li>
+                <p>
+                  The space around the outside of the element.
+                </p>
+              </li>
+            </ul>
+          </li>
+        </ul>
       </section>
 
       <section id="Reference" class="main-section">
