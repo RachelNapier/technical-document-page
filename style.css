@@ -47,6 +47,12 @@ nav {
       CONTENT STYLES
    ====================== */
 
+main {
+  grid-area: main;
+  margin: 20px 30px;
+  text-align: justify;
+}
+
 code {
   display: block;
   text-align: left;
@@ -80,5 +86,12 @@ img {
     display: grid;
     grid-template-columns: 280px auto;
     grid-template-areas: "nav main";
+  }
+
+  nav {
+    position: fixed;
+    width: 280px;
+    border: none;
+    border-right: 4px solid #9073c1;
   }
 }
