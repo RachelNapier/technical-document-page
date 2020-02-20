@@ -43,6 +43,19 @@ nav {
   box-sizing: border-box;
 }
 
+nav header {
+  text-transform: uppercase;
+  text-align: center;
+  padding: 10px;
+}
+
+nav li {
+  position: relative;
+  padding: 10px;
+  list-style: none;
+  border-top: 1px solid #9073c1;
+  max-width: 100%;
+}
 /* ======================
       CONTENT STYLES
    ====================== */
