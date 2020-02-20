@@ -8,19 +8,19 @@
   </head>
   <body>
     <div id="grid-container">
-        <nav id="navbar">
-          <header><h1>CSS Basics Documentation</h1></header>
-          <ul id="menu">
-            <li><a href="#What_is_CSS?" class="nav-link">What is CSS?</a></li>
-            <li><a href="#CSS_ruleset" class="nav-link">CSS ruleset</a></li>
-            <li>
-              <a href="#Fonts_and_text" class="nav-link">Fonts and text</a>
-            </li>
-            <li><a href="#Boxes" class="nav-link">Boxes</a></li>
-            <li><a href="#Reference" class="nav-link">Reference</a></li>
-          </ul>
-        </nav>
-        <main id="main-doc">
+      <nav id="navbar">
+        <header><h1>CSS Basics Documentation</h1></header>
+        <ul id="menu">
+          <li><a href="#What_is_CSS?" class="nav-link">What is CSS?</a></li>
+          <li><a href="#CSS_ruleset" class="nav-link">CSS ruleset</a></li>
+          <li>
+            <a href="#Fonts_and_text" class="nav-link">Fonts and text</a>
+          </li>
+          <li><a href="#Boxes" class="nav-link">Boxes</a></li>
+          <li><a href="#Reference" class="nav-link">Reference</a></li>
+        </ul>
+      </nav>
+      <main id="main-doc">
         <section id="What_is_CSS?" class="main-section">
           <header><h2>What is CSS?</h2></header>
           <article>
@@ -56,7 +56,9 @@
               This whole structure is called a <strong>rule set</strong> (but
               often "rule" for short). Note the names of the individual parts:
             </p>
-            <img src="images/css-example.png" alt="Example of Css code." />
+            <div class="parent">
+            <img width="400" height="250" src="images/css-example.png" alt="Example of Css code." />
+            </div>
             <ul>
               <li>
                 <p>Selector</p>
@@ -218,11 +220,13 @@
               CSS layout is based principally on the box model. Each of the
               blocks taking up space on your page has properties like this:
             </p>
-            <img src="images/box-model.png" alt="Box model example" />
+            <div class="parent">
+            <img width="400" height="250" src="images/box-model.png" alt="Box model example" />
+            </div>
             <ul>
               <li>
                 <p>
-                  <strong>Padding</strong>
+                  Padding
                 </p>
                 <ul>
                   <li>
@@ -235,7 +239,7 @@
               </li>
               <li>
                 <p>
-                  <strong>Border</strong>
+                  Border
                 </p>
                 <ul>
                   <li>
@@ -247,7 +251,7 @@
               </li>
               <li>
                 <p>
-                  <strong>Margin</strong>
+                  Margin
                 </p>
                 <ul>
                   <li>
@@ -274,10 +278,6 @@
           </article>
         </section>
       </main>
-    <footer>
-      <p>A project for <a href="wwww.freecodecamp.org" target="_blank">FreeCodeCamp</a> by:</p>
-      <p>Rachel Napier</p>
-    </footer>
     </div>
   </body>
   <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
