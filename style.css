@@ -2,39 +2,140 @@
         GLOBAL STYLES
    ====================== */
 
-html,
-body {
-  font-family: "Raleway", sans-serif;
-  background-color: #f7f4ea;
-  line-height: 1.5;
-  color: #675289;
-  scroll-behavior: smooth;
-}
 
-#grid-container {
-  display: block;
-}
-
-header {
-  font-weight: 600;
-  color: #5e939e;
-}
-
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-size: 20px;
-}
-
-/* ======================
-      SECTION STYLES
-   ====================== */
-
-/* ======================
-      RESPONSIVE STYLES
-   ====================== */
-@media (min-width: 768px);
- {
-}
+   html,body{
+    background:#F7F4EA;
+    font-family:'Lato', Arial, sans-serif;
+    line-height:1.5;
+    color:#675289;
+    scroll-behavior:smooth;
+  }
+  
+  header{
+    font-weight:600;
+    color:#5e939e;
+  }
+  
+  h2, h3, h4, h5, h6 {
+    font-size: 20px;
+  }
+  
+  code {
+    display:block;
+    text-align:left;
+    position:relative;
+    line-height:2;
+    padding:10px;
+    margin:10px;
+    width:auto;
+    background:#F1F1F1;
+    border:1px solid lightgrey;
+    border-radius:10px;
+  }
+  
+  pre {
+      white-space: pre-wrap;
+  }
+  
+    #grid-container{
+      display:block;
+    }
+  
+  /* NAVBAR */
+  
+  nav{
+    position:relative;
+    text-align:left;
+    width:100%;
+    top:0;
+    left:0;
+    grid-area:nav;
+    border:4px solid #9073C1;
+    box-sizing:border-box;
+  }
+  
+  nav header{
+    text-transform:uppercase;
+    font-size:18px;
+    text-align:center;
+    padding:10px;
+  }
+  
+  nav li{
+    position:relative;
+    padding:10px;
+    list-style:none;
+    border-top:1px solid #9073C1;
+    max-width:100%;
+  }
+  
+  
+  
+  nav ul{
+    margin:auto;
+    padding:0;
+    height:auto;
+    overflow-y:auto;
+    
+  }
+  
+  nav a{
+    color: #9073C1;
+    text-decoration:none;
+    transition: text-transform 1s;
+  }
+  
+  nav li:hover{
+    background-color:	#
+    color:#6a548e;
+  }
+  
+  
+  /* MAIN CONTENT */
+  
+  main{
+    grid-area:main;
+    margin:20px 30px;
+    text-align:justify;
+  }
+  
+  main header{
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+  
+  main li{
+    padding-left:20px;
+    padding-top:5px;
+  }
+  
+  /* MEDIA QUERIES */
+  
+  @media only screen and (min-width: 768px){
+    #grid-container{
+    display:grid;
+    grid-template-columns: 280px auto;
+    grid-template-areas:
+      'nav main'
+  }
+    
+    nav{
+      position:fixed;
+      width:280px;
+      border:none;
+      border-right:4px solid 	#9073C1;
+    }
+    
+    nav ul{
+      height:100vh;
+    }
+  
+    h2, h3, h4, h5, h5, h6 {
+      font-size: 32px;
+      border-bottom: .5px solid #9073C1;
+    }
+  
+  body{
+    overflow-y: scroll;
+  }
+  
