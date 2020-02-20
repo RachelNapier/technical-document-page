@@ -49,6 +49,13 @@ nav header {
   padding: 10px;
 }
 
+nav ul {
+  margin: auto;
+  height: auto;
+  overflow-y: auto;
+  padding: 0;
+}
+
 nav li {
   position: relative;
   padding: 10px;
