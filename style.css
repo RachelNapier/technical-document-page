@@ -2,25 +2,39 @@
         GLOBAL STYLES
    ====================== */
 
-
-
-html, body {
+html,
+body {
   font-family: "Raleway", sans-serif;
-  background-color: #F7F4EA;
-  line-height:1.5;
-  color:#675289;
+  background-color: #f7f4ea;
+  line-height: 1.5;
+  color: #675289;
   scroll-behavior: smooth;
 }
 
+#grid-container {
+  display: block;
+}
+
+header {
+  font-weight: 600;
+  color: #5e939e;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 20px;
+}
 
 /* ======================
       SECTION STYLES
    ====================== */
 
-  
 /* ======================
       RESPONSIVE STYLES
    ====================== */
-@media (min-width: 768px); {
-
+@media (min-width: 768px);
+ {
 }
