@@ -90,11 +90,14 @@ pre {
   white-space: pre-wrap;
 }
 
+.parent {
+  width: 250px;
+}
+
 img {
-  max-width: 100%;
-  max-height: auto;
-  width: 400px;
-  height: 250px;
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 /* ======================
@@ -113,5 +116,18 @@ img {
     width: 280px;
     border: none;
     border-right: 4px solid #9073c1;
+  }
+
+  nav ul {
+    height: 100vh;
+  }
+
+  h2, h3, h4, h5, h5, h6 {
+    font-size: 32px;
+    border-bottom: .5px solid #9073C1;
+  }
+
+  .parent {
+    width: 400px;
   }
 }
