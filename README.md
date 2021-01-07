@@ -31,7 +31,7 @@ A fully responsive, mock, "CSS3 Basics - Technical Documentation Page". This web
 
 <p align="center"><strong>Desktop navigation version:</strong></p>
 
-![Project Screenshot](images/demo-lg.gif)
+![Project Screenshot](images/demo-sm.gif)
 <br>
 <br>
 
@@ -40,7 +40,7 @@ A fully responsive, mock, "CSS3 Basics - Technical Documentation Page". This web
 
 <div align="center">
 
-![Project Screenshot](images/demo-sm.gif)
+![Project Screenshot](images/demo-lg.gif)
 
 </div>
 
