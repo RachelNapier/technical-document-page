@@ -57,6 +57,6 @@ Testing: [FreeCodeCamp](https://www.freecodecamp.org)<br>
 ## <strong>Contact Me</strong>
 
 LinkedIn: [Rachel Napier](https://www.linkedin.com/in/rachelnapierx)<br>
-Twitter: [@RachelNapier93](https://twitter.com/RachelNapier93)<br>
+Twitter: [RachelNapier93](https://twitter.com/RachelNapier93)<br>
 Github: [RachelNapier](https://github.com/RachelNapier)<br>
 Gmail: napier.rachel93@gmail.com
